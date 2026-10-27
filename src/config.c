@@ -415,9 +415,9 @@ static struct section_def section_defs[] = {
         G_FIELD(
             transform_pointer, "true", parse_bool, noop,
             "Whether to apply the output transform to the pointer position.\n"
-            "Set to false if the compositor already applies it to virtual\n"
-            "pointer motion (the pointer lands in the wrong place on rotated\n"
-            "or flipped outputs)."
+            "Compositors differ on whether virtual pointer coordinates are\n"
+            "pre- or post-transform. Set to false if the pointer lands in the\n"
+            "wrong place on rotated or flipped outputs."
         )
     ),
     SECTION(
