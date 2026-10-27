@@ -16,6 +16,12 @@ modes=tile,bisect
 # Status code to exit with when cancelled
 cancellation_status_code=0
 
+# Whether to apply the output transform to the pointer position.
+# Set to false if the compositor already applies it to virtual
+# pointer motion (the pointer lands in the wrong place on rotated
+# or flipped outputs).
+transform_pointer=true
+
 
 ## Configuration for tile mode ##
 [mode_tile]
